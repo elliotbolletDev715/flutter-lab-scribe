@@ -31,7 +31,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full">
-        <Sidebar defaultCollapsed={false} collapsible>
+        <Sidebar defaultCollapsed={false} collapsible="icon">
           <SidebarContent className="py-6">
             <div className="px-4 mb-8">
               <h1 className="font-bold text-2xl text-sidebar-foreground tracking-tight">Lab Website</h1>
