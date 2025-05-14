@@ -87,10 +87,9 @@ export default function Layout({ children }: LayoutProps) {
         <div className="flex-1 overflow-auto">
           <header className="border-b flex items-center justify-between h-14 px-4 md:px-6">
             <div className="flex items-center gap-2">
-              <SidebarTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
-                  <Menu className="size-5" />
-                </Button>
+              {/* Fix: Using SidebarTrigger without asChild prop */}
+              <SidebarTrigger className="md:hidden">
+                <Menu className="size-5" />
               </SidebarTrigger>
             </div>
           </header>
